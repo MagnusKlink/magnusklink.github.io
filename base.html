@@ -1,0 +1,54 @@
+{% load static %}
+{% load custom_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'core/main.css' %}">
+    {% if title %}
+        <title>klnk. | {{ title }}</title>
+    {% else %}
+        <title>klnk.</title>
+    {% endif %}
+</head>
+<header>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container flex">
+               <a href="{% url 'core-home' %}" class="logo">klnk.</a>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'core-home' %}">Home</a></li>
+                    <li><a href="{% anchor 'core-home' 'goals' %}">Goals</a></li>
+                    <li><a href="{% anchor 'core-home' 'about' %}">About</a></li>
+                    <li><a href="{% url 'blog-home' %}">Devlog</a></li>
+                    <li><a href="{% anchor 'core-home' 'contact' %}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<body>
+    {% block content %}{% endblock %}
+</body>
+<footer>
+    <div class="footer">
+        <div class="container grid">
+            <div>
+                <h1>klnk.</h1>
+                <p>Copyright &copy; 2022</p>
+            </div>
+            <div class="social">
+                <a href="https://linkedin.com/in/klnk"><i class="fa fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com/MagnusKlink"><i class="fa fa-github fa-2x"></i></a>
+                <a href="https://twitter.com/magnusklink"><i class="fa fa-twitter fa-2x"></i></a>
+                <a href="https://www.instagram.com/magnusklink_/"><i class="fa fa-instagram fa-2x"></i></a>
+                <a href="https://matrix.to/#/@klink:nitro.chat"><i class="fa fa-matrix-org fa-2x"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

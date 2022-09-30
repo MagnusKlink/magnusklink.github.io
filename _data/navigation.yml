@@ -1,0 +1,8 @@
+- name: Valley of Athaar
+  link: /
+- name: About me
+  link: /about.html
+- name: Devlogs
+  link: /devlogs.html
+- name: Contact
+  link: /contact.html
