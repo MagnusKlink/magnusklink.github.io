@@ -11,28 +11,9 @@
     {% include navigation.html %}
   </header>
   <body>
-    <div class="page-container">
-      <div class="content-wrap">
-        <div class="container">
-          {{ content }}
-        </div>
-      </div>
-      <footer>
-        <div class="footer">
-            <div class="container grid">
-                <div>
-                    <p>Copyright &copy; 2022</p>
-                </div>
-                <div class="social">
-                    <a href="https://linkedin.com/in/klnk"><i class="fa fa-linkedin fa-2x"></i></a>
-                    <a href="https://github.com/MagnusKlink"><i class="fa fa-github fa-2x"></i></a>
-                    <a href="https://twitter.com/magnusklink"><i class="fa fa-twitter fa-2x"></i></a>
-                    <a href="https://www.instagram.com/magnusklink_/"><i class="fa fa-instagram fa-2x"></i></a>
-                    <a href="https://matrix.to/#/@klink:nitro.chat"><i class="fa fa-matrix-org fa-2x"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    </div>
+    {{ content }}
   </body>
+  <footer>
+    {% include footer.html %}
+</footer>
 </html>

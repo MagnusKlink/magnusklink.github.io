@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
+:root {
+      --primary-color: #020887;
+      --secondary-color: #000;
+      --color-bg: #000;
+      --primary-text-color: #fff;
+      --secondary-text-color: #333;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -14,7 +22,8 @@ body {
   font-family: 'Lato', sans-serif;
   color: var(--primary-text-color);
   line-height: 1.6;
-  background-color: #06093B;
+  background-image: linear-gradient(var(--primary-color), var(--secondary-color));
+  min-height: 100vh;
 }
 
 ul {
@@ -23,18 +32,20 @@ ul {
 
 a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
 }
 
 h1, h2 {
   font-weight: 300;
   line-height: 1.2;
   margin: 10px 0;
+  color: var(--primary-text-color);
 }
 
 p {
   margin: 10px 0;
   letter-spacing: 1px;
+  color: var(--primary-text-color);
 }
 
 img {
@@ -50,9 +61,11 @@ header {
 /* Navbar */ 
 
 .navbar {
-  background-color: #020887;
+  background-color: #00000080;
   color: #fff;
   height: 70px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   
 }
 
@@ -89,7 +102,12 @@ header {
   width: 100%;
   bottom: 0;
   color: #fff;
-  position: absolute;
+  margin-top: auto;
+  
+}
+
+.footer p {
+  color: #fff;
 }
 
 .footer a {
@@ -103,6 +121,7 @@ header {
 .footer i {
   margin: 20px;
 }
+
 .footer .grid {
   grid-template-columns: 1fr 2fr;
 }
@@ -135,11 +154,71 @@ header {
   height: 100%;
 }
 
-.content-wrap {
-  padding-bottom: 150px;
+.grid-reverse {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-.page-container {
-  position: relative;
-  min-height: 100vh;
+.header-image {
+  padding-top: 10rem;
+}
+
+.game-description {
+  text-align: center;
+  color: #fff;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.text-center {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.showcase {
+  overflow: hidden;
+}
+
+.showcase img {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.platforms a {
+  padding: 20px;
+  padding-bottom: 5rem;
+  color: var(--primary-text-color);
+}
+
+.portrait {
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+}
+
+.grid-about {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 10rem;
+}
+
+.latest-post img {
+  width: 50vw;
+}
+
+.latest-post-center {
+  text-align: center;
+}
+
+.container .contact {
+  margin-bottom: 30vh;
 }
