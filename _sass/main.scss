@@ -22,7 +22,8 @@ body {
   font-family: 'Lato', sans-serif;
   color: var(--primary-text-color);
   line-height: 1.6;
-  background-image: linear-gradient(var(--primary-color), var(--secondary-color));
+ /* background-image: linear-gradient(var(--primary-color), var(--secondary-color)); */ 
+  background-color: #000;
   min-height: 100vh;
 }
 
@@ -221,4 +222,16 @@ header {
 
 .container .contact {
   margin-bottom: 30vh;
+}
+
+.jesper-image {
+  width: 35vw;
+}
+
+.jesper-text {
+  padding: 10px;
+}
+
+.move-up {
+  align-self: flex-start;
 }
