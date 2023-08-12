@@ -1,56 +1,15 @@
 ---
 title: Home
 ---
-<div class="container header-image">
-    <img src="/assets/images/HeaderFinal.png">
-    <p class="game-description">You find yourself in a dense and mysterious forest in the Valley of Athaar, where you come across artefacts with strange properties and powers from an ancient and lost civilisation. You’re curious and <i>have</i> to know more and discover their meaning!</p>
-</div>
-<div>
-    <img src="/assets/images/screenshot_01.png">
-</div>
-<div class="container showcase">
-    <h1 class="text-center">{{ "About the project" }}</h1>
+<div class="container grid-home" id="home">
     <div>
-        <p class="text-center">Through the game, the player learns to read and recognize the writing, and sounds, of these artefacts (runestones) and use them to solve obstacles and progress further in the game. During the game, the difficulty will increase and the same will ones ‘vocabulary’ of runestone combinations. - When one has finished the game, it is the goal that the player is able to recognize and make use of all the various runes - that turn out to be the arabic alphabet!
-            <br>
-            The main purpose of the game is to be fun and entertaining, with the bonus of the player learning the arabic alphabet, without the game feeling like “school” or as a learning tool - which is very important. 
-            <br>
-            ‘Valley of Athaar’ is an RPG/adventure/exploration/puzzle videogame, inspired by titles such as ‘Legend of Zelda’, ‘Terraria’, ‘Hearthstone’ and ‘Stardew Valley’.</p>
-    </div>
-    <h1 class="text-center">{{ "User experience" }}</h1>
-    <div class="grid-reverse">
-        <img src="/assets/images/CharacterBase_animations_newPants.gif">
-        <p>The ‘feel’ of the game should be almost magical, with great sound design, atmosphere, particles, sound effects, lighting, music - creating the foundation for immersion.</p>
-        
-    </div>
-
-    <h1 class="text-center">{{ "Game mechanics" }}</h1>
-    <div class="grid">
-        <p>The aim of the game is to be intuitive and easy to learn, without being boring for avid gamers. Controller support is also high on the list!</p>
-    </div>
-
-    <h1 class="text-center">{{ "Runes" }}</h1>
-    <div class="grid">
-        <p>The runes act as a resource and a tool in the game, with abilities that the player get to know during the course of the game. They are the main component for problem solving and “coolness”. Who doesn’t want to be a wizard?</p>
-        <img src="/assets/images/Runestone_1.gif">
-    </div>
-
-    <h1 class="text-center">{{ "Values and ethics" }}</h1>
-    <div>
-        <p>While it is certainly not the main goal of the project, i've made certain decisions in regards to the project that reflect my personal values and ethics; Kindness, acceptance, tolerance, equality & diversity.</p>
-        <p>During character creation, the player doesn't choose a gender. - It is very important to me that every person has the opportunity to feel represented and play the game as 'themselves', however they may look or identify. The player character is therefore a "blank slate" so to speak, which can reflect the players gender expression, identity, style, etc.</p>
-        <p>Furthermore, the character creation will also include a wide palette of skin and hair colors, various clothing options and also the possibility of no hair or a covering.</p>
-    </div>
-
-    <h1 class="text-center">{{ "Platforms" }}</h1>
-    <div class="flex platforms">
-        <a><i class="fa fa-apple fa-4x"></i></a>
-        <a><i class="fa fa-android fa-4x"></i></a>
-        <a><i class="fa fa-linux fa-4x"></i></a>
-        <a><i class="fa fa-steam fa-4x"></i></a>
-        <a><i class="fa fa-gamepad fa-4x"></i></a>
-        <a><i class="fa fa-windows fa-4x"></i></a>
-    </div>
+        <a class="grid-home-text">Hi! I'm Magnus!</a>
+        <br>
+        <h1>Welcome to my website! 
+            And if i don't already know you.. Nice to meet you!😊</h1>
+        </div>
+    <img class="portrait" src="/assets/images/memoji.png">
 </div>
-
-    
+{% include about.html %}
+{% include skills.html %}
+{% include contact.html %}

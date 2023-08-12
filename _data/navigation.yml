@@ -1,10 +1,10 @@
-- name: Valley of Athaar
+- name: Home
   link: /
-- name: Devlogs
-  link: /devlogs.html
 - name: About
-  link: /about.html
+  link: "#about"
 - name: Contact
-  link: /contact.html
+  link: "#contact"
+- name: Skills
+  link: "#skills"
 - name: Jesper
   link: /jesper.html
