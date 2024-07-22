@@ -1,7 +1,10 @@
-<div class="footer">
-    <div class="flex container">
-        <div>
-            <p>Magnus Klink Copyright &copy; 2023</p>
-        </div>
-    </div>
-</div>
+<footer>
+    <section class="container">
+        <p>Magnus Klink Copyright &copy; 2023</p>
+        <section class="socials">
+            {% for item in site.data.socials %}
+              {{ item.content }}
+            {% endfor %}
+        </section>
+    </section>
+</footer>

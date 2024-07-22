@@ -1,10 +1,10 @@
-- name: Home
-  link: /
-- name: About
+- name: .home()
+  link: "#home"
+- name: .about()
   link: "#about"
-- name: Contact
-  link: "#contact"
-- name: Skills
+- name: .skills()
   link: "#skills"
-- name: Jesper
-  link: /jesper.html
+- name: .projects()
+  link: "#projects"
+- name: .contact()
+  link: "#contact"

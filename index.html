@@ -1,13 +1,19 @@
 ---
 title: Home
 ---
-<div class="container grid-home" id="home">
-    <div>
-        <a class="grid-home-text">Hi! I'm Magnus!</a>
-        
-    </div>
-    <img class="portrait" src="/assets/images/memoji.png">
-</div>
+<section class="landing" id="home">
+    <section class="container">
+        <a>Hi! I'm</a>
+        <a>Magnus Klink</a>
+        <a class="line3"></a>
+        <a href="#contact" class="contactbutton">
+            <img src="/assets/images/contactmebutton.png" class="contactmetext">
+            <img src="/assets/images/memoji.png" class="memoji">
+        </a>
+        <a class="vertical-text">Developer // Artist // Programmer // Maker</a>
+    </section>
+</section>
 {% include about.html %}
 {% include skills.html %}
+{% include projects.html %}
 {% include contact.html %}

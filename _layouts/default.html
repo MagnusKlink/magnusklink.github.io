@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="var(--primary-color)">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <script src="/assets/js/script.js"></script>
     <title>{{ page.title }}</title>
   </head>
   <body>
@@ -12,8 +14,8 @@
       {% include navigation.html %}
     </header>
     {{ content }}
+    <footer>
+      {% include footer.html %}
+  </footer>
   </body>
-  <footer>
-    {% include footer.html %}
-</footer>
 </html>
